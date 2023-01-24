@@ -1,0 +1,34 @@
+task 1:how to compare two json have the same properties without order
+
+sorry, i can't understand this question, i think not yet it teach
+
+task 2: console of flags
+
+var request =new XMLHttpRequest();
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send();
+request.onload= function(){
+var result = JSON.parse(request.response);
+for (i=0; i<result.length;i++){
+console.log(result[i].flags);
+}
+}
+
+task3: console of country name, region, sub region, population
+
+var request =new XMLHttpRequest();
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send();
+request.onload= function(){
+var result = JSON.parse(request.response);
+for (i=0; i<result.length;i++){
+console.log("name:",result[i].name,"region:",result[i].region,"subregion:",result[i].subregion,"population:",result[i].population);
+}
+   
+}
+
+task 4:how to compare two json have the same properties without order
+
+may i know what is the purpose of this link?
+
+
