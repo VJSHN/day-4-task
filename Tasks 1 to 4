@@ -77,8 +77,4 @@ console.log("name:",result[i].name,"region:",result[i].region,"subregion:",resul
    
 }
 
-task 4:how to compare two json have the same properties without order
-
-may i know what is the purpose of this link?
-
 
