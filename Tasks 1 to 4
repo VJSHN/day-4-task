@@ -1,6 +1,56 @@
-task 1:how to compare two json have the same properties without order
+task 1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
+    </script>
+    <title>Document</title>
+</head>
+<h1>vijay</h1>
+<body>
+<script >
+    // ----------------without order Comparing------------
 
-sorry, i can't understand this question, i think not yet it teach
+let obj1 = {
+    name: "person",
+    age:5
+    
+    
+};
+let obj2 = {
+    age:5,
+    name: "person"
+};
+
+if(JSON.stringify(obj1)!==JSON.stringify(obj2)){
+    console.log(false)
+}else{
+    console.log(true)
+}
+
+// ----------------without order Comparing using lodash------------
+
+let obj1 = {
+    name: "person",
+    age:5
+    
+    
+};
+let obj2 = {
+    
+    age:5,
+    name: "person"
+};
+
+console.log(_.isEqual(obj1, obj2));
+</script>    
+</body>
+
+</html>
 
 task 2: console of flags
 
